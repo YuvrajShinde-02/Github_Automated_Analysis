@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Automated Analysis</title>
+</head>
+<body>
+    <form action="{% url 'analyze_repositories' %}" method="GET">
+        <input type="text" name="github_url" placeholder="Enter GitHub User URL">
+        <button type="submit">Analyze</button>
+    </form>
+</body>
+</html>

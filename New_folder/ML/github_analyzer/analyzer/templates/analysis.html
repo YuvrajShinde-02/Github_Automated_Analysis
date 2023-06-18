@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Results</title>
+</head>
+<body>
+    <h1>GitHub Automated Analysis Results</h1>
+    <p>GitHub User: {{ github_url }}</p>
+    <h2>Repositories:</h2>
+    <ul>
+        {% for repo in repositories %}
+            <li>{{ repo.name }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Most Complex Repository:</h2>
+    {% if most_complex_repo %}
+        <p>Repository: {{ most_complex_repo.name }}</p>
+        <p>Complexity Score: {{ complexity_score }}</p>
+    {% else %}
+        <p>No repositories found.</p>
+    {% endif %}
+</body>
+</html>

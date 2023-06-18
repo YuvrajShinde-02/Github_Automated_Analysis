@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Analyzer - Results</title>
+</head>
+<body>
+    <h1>Most Complex Repository:</h1>
+    <h3>Name: {{ most_complex_repo.name }}</h3>
+    <h3>Owner: {{ most_complex_repo.owner }}</h3>
+    <h3>URL: <a href="{{ most_complex_repo.url }}">{{ most_complex_repo.url }}</a></h3>
+    <h3>Complexity Score: {{ most_complex_repo.complexity_score }}</h3>
+</body>
+</html>
